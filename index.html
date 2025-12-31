@@ -1,0 +1,175 @@
+<script type="text/javascript">
+  atOptions = {
+  	'key' : '94e7dd40875d1eb450ace5e5c1696981',
+  	'format' : 'iframe',
+  	'height' : 50,
+  	'width' : 320,
+  	'params' : {}
+  };
+</script>
+<script
+  type="text/javascript"
+  src="https://www.highperformanceformat.com/94e7dd40875d1eb450ace5e5c1696981/invoke.js"
+></script>
+<!DOCTYPE html><html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy New Year 2026 Wishes Generator</title>
+  <meta name="description" content="Happy New Year 2026 Wishes Generator – apna naam daalein aur WhatsApp par wish share karein." />  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-align:center;
+    }
+    .card{
+      width:100%;
+      max-width:420px;
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(8px);
+      border-radius:20px;
+      padding:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    }
+    h1{
+      font-size:28px;
+      margin-bottom:10px;
+    }
+    .year{
+      font-size:40px;
+      font-weight:bold;
+      color:#ffd700;
+      margin-bottom:15px;
+    }
+    .fire{
+      font-size:28px;
+      animation:pop 1.5s infinite;
+    }
+    @keyframes pop{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.2)}
+      100%{transform:scale(1)}
+    }
+    input{
+      width:100%;
+      padding:12px;
+      border-radius:10px;
+      border:none;
+      margin:15px 0;
+      font-size:16px;
+      outline:none;
+    }
+    button{
+      width:100%;
+      padding:12px;
+      background:#25D366;
+      border:none;
+      border-radius:10px;
+      font-size:18px;
+      color:#fff;
+      cursor:pointer;
+      margin-top:10px;
+    }
+    button:hover{background:#1ebe5d}
+    .wish{
+      margin-top:20px;
+      background:rgba(0,0,0,0.3);
+      padding:15px;
+      border-radius:12px;
+      font-size:16px;
+      line-height:1.5;
+    }
+    .share{
+      margin-top:15px;
+    }
+    .share a{
+      display:inline-block;
+      margin:8px;
+      padding:10px 15px;
+      border-radius:8px;
+      text-decoration:none;
+      color:#fff;
+      background:#128C7E;
+      font-size:15px;
+    }
+    footer{
+      margin-top:20px;
+      font-size:12px;
+      opacity:0.8;
+    }
+  audio{display:none}
+</style></head>
+<body>  <div class="card">
+    <div class="fire">🎆🎉🎆</div>
+    <img src="fireworks.gif" alt="fireworks" style="width:100%;border-radius:12px;margin:10px 0;" />
+    <h1>Happy New Year</h1>
+    <div class="year">2026</div><input type="text" id="nameInput" placeholder="Apna naam likhiye" />
+<button onclick="generateWish()">Wish Generate Kare</button>
+
+<div id="wishBox" class="wish" style="display:none"></div>
+
+<div class="share" id="shareBox" style="display:none">
+  <a id="whatsappBtn" href="#" target="_blank">📲 WhatsApp Share</a>
+</div>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="newyear.mp3" type="audio/mpeg">
+</audio>
+
+<footer>
+  ✨ Naya Saal 2026 ki Hardik Shubhkamnaye ✨
+</footer>
+<script type="text/javascript">
+  atOptions = {
+  	'key' : '94e7dd40875d1eb450ace5e5c1696981',
+  	'format' : 'iframe',
+  	'height' : 50,
+  	'width' : 320,
+  	'params' : {}
+  };
+</script>
+<script
+  type="text/javascript"
+  src="https://www.highperformanceformat.com/94e7dd40875d1eb450ace5e5c1696981/invoke.js"
+></script>
+  </div>  <script>
+    // background music play on user interaction (for mobile browsers)
+    document.body.addEventListener('click',()=>{
+      const music=document.getElementById('bgMusic');
+      if(music) music.play();
+    },{once:true});
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const senderName = urlParams.get('name');
+
+    if(senderName){
+      showWish(senderName);
+    }
+
+    function generateWish(){
+      const name = document.getElementById('nameInput').value.trim();
+      if(name === ''){
+        alert('Kripya apna naam likhiye');
+        return;
+      }
+      const newUrl = window.location.origin + window.location.pathname + '?name=' + encodeURIComponent(name);
+      window.history.replaceState({}, '', newUrl);
+      showWish(name);
+    }
+
+    function showWish(name){
+      const message = `🎉 ${name} ki taraf se 🎉\n\n✨ Happy New Year 2026 ✨\nAapko aur aapke parivaar ko naye saal ki hardik shubhkamnaye.\nNaya saal aapke jeevan me khushi, safalta aur swasthya lekar aaye. 🌟`;
+
+      document.getElementById('wishBox').style.display = 'block';
+      document.getElementById('wishBox').innerText = message;
+
+      document.getElementById('shareBox').style.display = 'block';
+      document.getElementById('whatsappBtn').href = 'https://wa.me/?text=' + encodeURIComponent(message + '\n\n' + window.location.href);
+    }
+  </script></body>
+</html>
